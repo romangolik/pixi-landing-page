@@ -1,0 +1,3 @@
+@function calcPercentage($value) {
+  @return calc((#{$value} / var(--relative-value)) * 100%);
+}

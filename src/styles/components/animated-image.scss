@@ -1,0 +1,23 @@
+.animated-image {
+  --relative-value: 448;
+
+  position: relative;
+
+  width: 100%;
+  max-width: 448px;
+
+  box-sizing: border-box;
+
+  svg {
+    display: block;
+    width: 100%;
+  }
+
+  &__animation-element {
+    position: absolute;
+
+    display: block;
+
+    animation: 1s cubic-bezier(0.42, 0, 0.58, 1) transformAnimation infinite alternate;
+  }
+}

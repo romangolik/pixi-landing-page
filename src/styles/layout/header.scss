@@ -1,0 +1,78 @@
+@import "../abstract/mixins/alignment.mixins";
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 25px 0;
+
+  &__container {
+    @include flexAlignment(center, space-between);
+  }
+
+  &__logo {
+    display: block;
+
+    width: 100%;
+    max-width: 171px;
+
+    img {
+      display: block;
+
+      width: 100%;
+    }
+  }
+
+  &__navigation {
+    position: relative;
+  }
+
+  &__navigation-list {
+    @include flexAlignment(center);
+  }
+
+  &__navigation-marker {
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+
+    width: 6px;
+    height: 6px;
+
+    flex: none;
+    border-radius: 50%;
+    background: linear-gradient(38.75deg, #6BD4FF 14.73%, #8C70FF 85.28%);
+
+    transition: 0.4s ease;
+
+    transform: translateX(-50%);
+  }
+
+  &__navigation-item {
+    padding: 10px 24px;
+  }
+
+  &__buttons {
+    @include flexAlignment(center);
+  }
+
+  &__button {
+    &:first-of-type {
+      margin-right: 13px;
+    }
+  }
+}
+
+@media screen and (max-width: 853px) {
+  .header__navigation {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .header__buttons {
+    display: none;
+  }
+}

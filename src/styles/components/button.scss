@@ -1,0 +1,27 @@
+button {
+  border: none;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.button {
+  padding: 10px 18px;
+
+  font-weight: 700;
+
+  border-radius: 100px;
+  box-sizing: border-box;
+
+  &_basic {
+    color: var(--purple);
+    background-color: var(--base-color-2);
+  }
+
+  &_primary {
+    color: var(--white);
+    background-color: var(--purple);
+  }
+}

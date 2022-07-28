@@ -1,0 +1,103 @@
+h1 {
+  font-family: Helvetica-Neue, sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: Manrope, sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 1.33;
+}
+
+h5 {
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+*:not(h1, h2, h3, h4, h5, h6, span) {
+  font-family: Helvetica-Neue, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+span {
+  font: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.extra-large-text {
+  font-size: 48px;
+}
+
+.large-text {
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.small-text {
+  font-size: 16px;
+}
+
+.extra-small-text {
+  font-size: 13px;
+}
+
+@media screen and (max-width: 1025px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 44px;
+  }
+
+  .extra-large-text {
+    font-size: 44px;
+  }
+
+  .large-text {
+    font-size: 20px;
+  }
+
+  .small-text {
+    font-size: 15px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 44px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .extra-large-text {
+    font-size: 40px;
+  }
+
+  .large-text {
+    font-size: 18px;
+  }
+
+  *:not(h1, h2, h3, h4, h5, h6, span) {
+    font-size: 16px;
+  }
+
+  .small-text {
+    font-size: 14px;
+  }
+
+  .extra-small-text {
+    font-size: 12px;
+  }
+}

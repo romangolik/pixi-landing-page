@@ -1,0 +1,29 @@
+.link {
+  text-decoration: none;
+
+  transition: 0.2s ease;
+
+  &_basic {
+    color: var(--white);
+
+    &:hover, &.link_active {
+      color: var(--blue);
+    }
+  }
+
+  &_primary {
+    color: var(--dark-purple);
+
+    &:hover, &.link_active {
+      color: var(--blue);
+    }
+  }
+
+  &_secondary {
+    color: var(--base-color);
+
+    &:hover, &.link_active {
+      color: var(--blue);
+    }
+  }
+}
