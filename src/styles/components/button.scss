@@ -35,15 +35,15 @@ button {
     display: flex;
     height: 100%;
     width: 100%;
+    align-items: center;
+    justify-content: center;
 
     font: inherit;
     line-height: inherit;
 
     overflow: hidden;
     border-radius: 30px;
-    align-items: center;
     clip-path: circle(0);
-    justify-content: center;
     color: var(--button-color);
     background-color: var(--text-color);
 
@@ -56,8 +56,6 @@ button {
     &:after {
       clip-path: circle(100%);
     }
-
-    color: var(--button-color);
   }
 
   &_basic {
