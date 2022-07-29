@@ -45,9 +45,9 @@
     border-radius: 50%;
     background: linear-gradient(38.75deg, #6BD4FF 14.73%, #8C70FF 85.28%);
 
-    transition: 0.4s ease;
-
     transform: translateX(-50%);
+
+    transition: 0.4s cubic-bezier(0.7, -0.4, 0.4, 1.4);
   }
 
   &__navigation-item {
