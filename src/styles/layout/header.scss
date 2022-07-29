@@ -63,16 +63,20 @@
       margin-right: 13px;
     }
   }
-}
 
-@media screen and (max-width: 853px) {
-  .header__navigation {
+  &__burger {
     display: none;
   }
 }
 
-@media screen and (max-width: 479px) {
-  .header__buttons {
-    display: none;
+@media screen and (max-width: 1023px) {
+  .header {
+    &__navigation, &__buttons {
+      display: none;
+    }
+
+    &__burger {
+      display: flex;
+    }
   }
 }

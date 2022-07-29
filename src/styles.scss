@@ -273,7 +273,7 @@ body {
     width: 140%;
     height: 110%;
 
-    background-image: linear-gradient(to bottom right, transparent 43%, #291c52 43% 57%, transparent 57% 100%);
+    background-image: linear-gradient(to bottom right, transparent 43%, var(--dark-blue) 43% 57%, transparent 57% 100%);
 
     transform: translate(-50%, -50%);
   }
@@ -290,7 +290,7 @@ body {
     height: 263px;
 
     border-radius: 50%;
-    background-color: #291C52;
+    background-color: var(--dark-blue);
 
     img {
       display: block;
@@ -339,7 +339,7 @@ body {
     height: 50px;
 
     border-radius: 50%;
-    background-color: #291C52;
+    background-color: var(--dark-blue);
 
     img {
       display: block;
@@ -410,7 +410,7 @@ body {
     height: 35%;
 
     border-radius: 50%;
-    background-color: #291C52;
+    background-color: var(--dark-blue);
   }
 
   &__paragraph {
@@ -800,7 +800,7 @@ body {
       height: 70%;
       width: 170%;
 
-      background-image: linear-gradient(to bottom right, transparent 40%, #291c52 40% 60%, transparent 60% 100%);
+      background-image: linear-gradient(to bottom right, transparent 40%, var(--dark-blue) 40% 60%, transparent 60% 100%);
     }
 
     &__message {
