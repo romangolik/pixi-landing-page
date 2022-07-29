@@ -34,6 +34,8 @@ HEADER_LINKS.forEach((headerLink, linkIndex) => {
 
 moveNavigationMarker(HEADER_LINKS[0]);
 
+
+
 const animationObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting || entry.boundingClientRect.top < 0) {
@@ -50,3 +52,13 @@ if (window.innerWidth <= 479) {
 } else {
     animationObserver.observe(document.querySelector('.our-clients'));
 }
+
+
+
+document.querySelector('#back-to-top')
+    .addEventListener('click', () => {
+       window.scrollTo({
+           top: 0,
+           behavior: 'smooth'
+       })
+    });
