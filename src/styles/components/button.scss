@@ -8,20 +8,65 @@ button {
 }
 
 .button {
+  --text-color: initial;
+  --button-color: initial;
+
+  position: relative;
+  z-index: 10;
+
   padding: 10px 18px;
 
   font-weight: 700;
 
+  overflow: hidden;
   border-radius: 100px;
   box-sizing: border-box;
+  color: var(--text-color);
+  background-color: var(--button-color);
+
+  &:after {
+    content: attr(data-text);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    font: inherit;
+    line-height: inherit;
+
+    overflow: hidden;
+    border-radius: 30px;
+    align-items: center;
+    clip-path: circle(0);
+    justify-content: center;
+    color: var(--button-color);
+    background-color: var(--text-color);
+
+    transition: all 0.6s ease;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    &:after {
+      clip-path: circle(100%);
+    }
+
+    color: var(--button-color);
+  }
 
   &_basic {
-    color: var(--purple);
-    background-color: var(--base-color-2);
+    --text-color: var(--purple);
+    --button-color: var(--base-color-2);
   }
 
   &_primary {
-    color: var(--white);
-    background-color: var(--purple);
+    --text-color: var(--white);
+    --button-color: var(--purple);
   }
 }

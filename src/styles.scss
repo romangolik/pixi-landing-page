@@ -587,6 +587,10 @@ body {
       height: 16px;
       width: 16px;
     }
+
+    &:after {
+      display: none;
+    }
   }
 
   &__text {
